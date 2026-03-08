@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy women's day 🌎</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(to bottom, #ffafbd, #ffc3a0);
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 500px;
+            text-align: center;
+            z-index: 1;
+            margin: 20px;
+        }
+
+        h1 { color: #d63384; font-size: 24px; }
+        p { color: #555; line-height: 1.6; font-size: 18px; }
+
+        /* Зүрхэн хөдөлгөөн */
+        .heart {
+            position: fixed;
+            top: -10%;
+            font-size: 20px;
+            color: #ff4d6d;
+            user-select: none;
+            z-index: 0;
+            animation: fall linear forwards;
+        }
+
+        @keyframes fall {
+            to { transform: translateY(110vh); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Хайрт ээж Чулуунцэцэг -дээ илгээх захидал❤️</h1>
+        <p>
+            Сайн байна уу?✨🌷 Ертөнцийн наран, миний хайрт ээж ээ...☀️ Юуны өмнө тандаа энэхүү гайхалтай өдрийн мэндийг хүргэе.💕✨ Ээж ээ! Миний өдий зэрэгтээ яваа минь гагцхүү таны минь ач тус, таны минь уужуу ухаан, цуцашгүй их хөдөлмөрийн үр шим юм шүү. Хүүхэд насны минь гэнэн алдааг уучлан зөвлөж, залуу насны минь омголон занг зөөллөн номхотгож, үргэлж миний өмнө бат зогсож байдагт баярлалаа.🌎✨ Таны минь миний төлөө хийсэн бүхэн хэмжээлшгүй их юм аа. Хүн бүр надад эргэлзэж байхад та минь л ганцаараа "Миний охин чадна" гэж шивнэдэг байсан. Тэрхүү итгэл надад өнөөдрийн амжилтын жигүүрийг ургуулж өгсөн юм шүү. Биднийг өлсгөхгүй, дутаахгүй гэсэндээ өөрийнхөө хүсэл мөрөөдлийг хойш тавьж, өмссөнөөсөө илүүг өмсгөж, идсэнээсээ илүүг идүүлж ирсэн таны тэр агуу сэтгэлийг би одоо л бүрэн ухаарч байна. 🌷❤️ Хамгийн хэцүү цаг мөчид ч таны минь ганцхан харц, зөөлөн инээмсэглэл бүх зовлонг үргээх шидтэй байдаг. 🥹🌹 Та бол миний хувьд энэ ертөнцийн хамгийн тод гялалзах гэрэл гэгээ минь. Хэдийгээр би таныхаа ачийг хэзээ ч бүрэн хариулж чадахгүй ч, таныгаа үргэлж баярлуулж, нүүрэнд тань үргэлж инээмсэглэл тодруулахын тулд хичээх болно. 🌙🌍<br><br>
+            Та минь урт насалж, удаан жаргаж, биднийхээ дунд мөнхөд гэрэлтэж яваарай. Тандаа хязгааргүй их хайртай шүү. 🐥🍄
+            Хүндэтгэн хайрласан охин Уранцэцэг -с 🌹
+            2026.03.08
+        </p>
+        <p><b>Үргэлж хайртай шүү бүсгүй минь. 🎀 </b></p>
+    </div>
+
+    <script>
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.innerHTML = '❤️';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = Math.random() * 3 + 2 + 's';
+            heart.style.opacity = Math.random();
+            document.body.appendChild(heart);
+
+            setTimeout(() => { heart.remove(); }, 5000);
+        }
+        setInterval(createHeart, 300);
+    </script>
+</body>
+</html>
